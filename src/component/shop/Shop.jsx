@@ -6,6 +6,7 @@ import "./Shop.css"
 
 const Shop = () => {
     const [products,setProducts]=useState([])
+    const [cart,setCart]=useState([])
     useEffect(()=>{
         fetch("packeg.json")
         .then(res=>res.json())
@@ -13,8 +14,7 @@ const Shop = () => {
     },[])
 
 
-    
-    const [cart,setCart]=useState([])
+
     useEffect(()=>{
         const storedCart=getShoppingCart();
         const savedCart=[];
