@@ -1,0 +1,28 @@
+.header {
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+div .header a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+}
+
+div .header a:hover {
+    color: orange;
+}
+
+@media only screen and (max-width:600px) {
+    .header {
+        padding: 0;
+    }
+
+    div .header a {
+        margin-left: 2px;
+    }
+}
